@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5295537e26.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/S-removebg-preview.png">
+    <title>Ogani | Healthy Foods</title>
+    <style>
+        .section1 {
+            background-color: rgba(214, 214, 214, 0.651);
+            font-size: 14px;
+        }
+
+        .section1 .container .row .icons {
+            margin-right: 20px;
+        }
+
+        .section1 .container .row .icons a {
+            color: black;
+            text-decoration: none;
+            padding: 6px 10px;
+            border-radius: 100%;
+            margin: 0px 3px;
+        }
+
+        .section1 .container .row .icons a:hover {
+            color: rgb(8, 107, 255);
+            border: none;
+        }
+
+        .section1 select {
+            border: none;
+            background-color: transparent;
+            margin: -5px 20px 0px 0px;
+            outline: none;
+        }
+
+        .section1 .row .login a {
+            text-decoration: none;
+            color: black;
+            font-weight: 400;
+            font-size: 16px !important;
+        }
+
+        .section1 .row .login i {
+            margin-right: 5px;
+            font-size: 18px !important;
+        }
+
+        /* Section 2 */
+
+        .section2 .container .row .nav a {
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 17px;
+            color: black;
+            letter-spacing: 2px;
+        }
+
+        .section2 .container .row .icons a {
+            color: black;
+            text-decoration: none;
+            font-size: 30px !important;
+            margin: 0px 27px 0px 0px;
+            position: relative;
+        }
+
+        .section2 .container .row .icons span {
+            font-size: 14px !important;
+            position: absolute;
+        }
+
+        .hero__item {
+            height: 431px;
+            display: flex;
+            align-items: center;
+            padding-left: 75px;
+        }
+
+        .section4 .col-lg-3 .card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section4 .col-lg-3 .card .icons {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.4s ease-in-out;
+            opacity: 0;
+        }
+
+        .section4 .col-lg-3 .card:hover .icons {
+            opacity: 1;
+            top: 65%;
+        }
+
+        .section4 .col-lg-3 .card .icons a {
+            text-decoration: none;
+            color: black;
+            padding: 8px 10px;
+            margin: 0px 5px;
+            border: 1px solid black;
+            border-radius: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .section4 .col-lg-3 .card .icons a:hover {
+            transform: rotate(360deg);
+            color: blue;
+        }
+
+        .section4 .container .nav .nav-item a {
+            font-size: 18px;
+            padding: 0px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section1">
+        <div class="container pt-2">
+            <div class="row mx-auto">
+                <div class="col-lg-6 d-flex flex-row p-2 one">
+                    <p class="email" style="border-right: 1px solid rgb(196, 196, 196); padding-right: 17px;"><i
+                            class="fa-solid fa-envelope me-1"></i>hanjalshihab1@gmail.com</p>
+                    <p class="ms-4">Free Shipping for all Order of $999</p>
+                </div>
+                <div class="col-lg-6 d-flex flex-row justify-content-end p-2">
+                    <div class="icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                    <div class="select">
+                        <img src="images/bd-flag.png" width="24px" height="20px" style="margin-top: -4px;">
+                        <select name="Language" id="language" style="height: 30px;">
+                            <option value="English">English</option>
+                            <option value="Bangla">Bangla</option>
+                            <option value="Arabic">Arabic</option>
+                        </select>
+                    </div>
+                    <div class="login">
+                        <a href="#"><i class="fa-solid fa-user"></i>Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-md-3 col-lg-3">
+                    <div class="logo">
+                        <img src="images/logo.png.webp" alt="Logo" style="margin-left: -16px;">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <ul class="nav pt-2" style="margin-left: -20px;">
+                        <li class="nav-item">
+                            <a class="nav-link active text-success" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3 d-flex justify-content-end">
+                    <div class="icons pt-1">
+                        <a href="#"><i class="fa-solid fa-heart"></i><span class="badge bg-success">3</span></a>
+                        <a href="#"><i class="fa-solid fa-cart-arrow-down"></i><span class="badge bg-success">2</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-lg-3">
+                    <a class="btn btn-success rounded-0 py-3" data-bs-toggle="collapse" href="#collapseExample"
+                        role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        <i class="fa-solid fa-bars" style="margin: 0px 30px 0px 0px"></i>
+                        <span style="font-weight: 500; margin: 0px 20px 0px 0px;">All Departments</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <div class="collapse show" id="collapseExample">
+                        <div class="card card-body rounded-0">
+                            <a href="#" style="color: black; text-decoration: none; padding: 6px 0px;">Fresh Meat</a>
+                            <a href="#" style="color: black; text-decoration: none; padding: 6px 0px;">Vegetables</a>
+                            <a href="#" style="color: black; text-decoration: none; padding: 6px 0px;">Fruits & Nut
+                                Gifts</a>
+                            <a href="#" style="color: black; text-decoration: none; padding: 6px 0px;">Fresh Berries</a>
+                            <a href="#" style="color: black; text-decoration: none; padding: 6px 0px;">Ocean Foods</a>
+                            <a href="#" style="color: black; text-decoration: none; padding: 6px 0px;">Butter & Eggs</a>
+                            <a href="#" style="color: black; text-decoration: none; padding: 6px 0px;">Fastfood</a>
+                            <a href="#" style="color: black; text-decoration: none; padding: 6px 0px;">Fresh Onion</a>
+                            <a href="#" style="color: black; text-decoration: none; padding: 6px 0px;">Papaya &
+                                Crisps</a>
+                            <a href="#" style="color: black; text-decoration: none; padding: 6px 0px;">Oatmeal</a>
+                            <a href="#" style="color: black; text-decoration: none; padding: 6px 0px;">Fresh Bananas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="form d-flex flex-row">
+                            <div class="dropdown rounded-0">
+                                <button class="btn btn-light dropdown-toggle border rounded-0 py-3" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    All Categories
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <form action="" style="width: 600px;">
+                                <div class="input-group">
+                                    <input type="search" class="form-control rounded-0 py-3" id="search"
+                                        placeholder="What do you need?">
+                                    <div class="input-group-text rounded-0 text-bg-success py-3 px-4">SEARCH</div>
+                                </div>
+                            </form>
+                            <div class="phone d-flex flex-row" style="margin-left: 60px;">
+                                <i class="fa-solid fa-phone mt-3 me-3"
+                                    style="font-size: 30px; color: rgb(86, 86, 250);"></i>
+                                <div class="number" style="line-height: 7px; margin-top: 15px;">
+                                    <p>+88013062249460</p>
+                                    <p>support 24/7 time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-12">
+                            <div class="hero__item set-bg" data-setbg="images/banner.jpg"
+                                style="background-image: url(images/banner.jpg.webp);">
+                                <div class="text">
+                                    <span class="text-success">FRUIT FRESH</span>
+                                    <h2 style="font-size: 50px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-bottom: 10px;">Vegetable<br>100% Organic</h2>
+                                    <p>Free Pickup and Delivery Available</p>
+                                    <a href="#" class="btn btn-primary mt-2">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="section4">
+        <div class="container" style="margin-top: 80px;">
+            <h2 class="text-center">FEATURED PRODUCTS</h2>
+            <div class="bar" style="width: 100px; height: 4px; margin: 10px auto; background-color: rgba(10, 166, 10, 0.785);"></div>
+            <ul class="nav nav-underline justify-content-center mt-5" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-bs-toggle="tab" aria-current="page" href="#All">All</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" data-bs-toggle="tab" href="#Oranges">Orages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" data-bs-toggle="tab" href="#Meat">Fresh Meat</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" data-bs-toggle="tab" href="#Vege">Vegtables</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" data-bs-toggle="tab" href="#Fastfood">Fastfood</a>
+                  </li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="All" class="container tab-pane active"><br>
+                  <div class="row mt-5">
+                    <div class="col-md-6 col-lg-3">
+                            <div class="card border-0">
+                                    <img src="images/feature-1.jpg.webp" alt="product" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <p>Crab Pool Security</p>
+                                    <h5>$30.00</h5>
+                                </div>
+                                <div class="icons d-flex flex-row justify-content-center">
+                                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                            <div class="card border-0">
+                                    <img src="images/feature-2.jpg.webp" alt="product" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <p>Banana</p>
+                                    <h5>$30.00</h5>
+                                </div>
+                                <div class="icons d-flex flex-row justify-content-center">
+                                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0">
+                                <img src="images/feature-3.jpg.webp" alt="product" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>Guava</p>
+                                <h5>$30.00</h5>
+                            </div>
+                            <div class="icons d-flex flex-row justify-content-center">
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0">
+                                <img src="images/feature-4.jpg.webp" alt="product" class="card-img-top">
+                            <div class="card-body text-center">
+                            <p>Watermelon</p>
+                            <h5>$30.00</h5>
+                            </div>
+                            <div class="icons d-flex flex-row justify-content-center">
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-5">
+                    <div class="col-md-6 col-lg-3">
+                            <div class="card border-0">
+                                    <img src="images/feature-3.jpg.webp" alt="product" class="card-img-top w-100 h-100">
+                                <div class="card-body text-center">
+                                    <p>Crab Pool Security</p>
+                                    <h5>$30.00</h5>
+                                </div>
+                                <div class="icons d-flex flex-row justify-content-center">
+                                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                            <div class="card border-0">
+                                    <img src="images/feature-6.jpg.webp" alt="product" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <p>Burger</p>
+                                    <h5>$30.00</h5>
+                                </div>
+                                <div class="icons d-flex flex-row justify-content-center">
+                                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0">
+                                <img src="images/feature-7.jpg.webp" alt="product" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>Mango</p>
+                                <h5>$30.00</h5>
+                            </div>
+                            <div class="icons d-flex flex-row justify-content-center">
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0">
+                                <img src="images/feature-8.jpg.webp" alt="product" class="card-img-top">
+                            <div class="card-body text-center">
+                            <p>Apple</p>
+                            <h5>$30.00</h5>
+                            </div>
+                            <div class="icons d-flex flex-row justify-content-center">
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="Oranges" class="container tab-pane fade"><br>
+                  <div class="row mt-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card border-0">
+                            <img src="images/feature-8.jpg.webp" alt="product" class="card-img-top">
+                           <div class="card-body text-center">
+                                <p>Apple</p>
+                                <h5>$30.00</h5>
+                           </div>
+                           <div class="icons d-flex flex-row justify-content-center">
+                            <a href="#"><i class="fa-solid fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card border-0">
+                            <img src="images/feature-2.jpg.webp" alt="product" class="card-img-top">
+                           <div class="card-body text-center">
+                                <p>Banana</p>
+                                <h5>$30.00</h5>
+                           </div>
+                           <div class="icons d-flex flex-row justify-content-center">
+                            <a href="#"><i class="fa-solid fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="Meat" class="container tab-pane fade"><br>
+                  <div class="row mt-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card border-0">
+                                <img src="images/feature-1.jpg.webp" alt="product" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>Fresh meat</p>
+                                <h5>$30.00</h5>
+                            </div>
+                            <div class="icons d-flex flex-row justify-content-center">
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="Vege" class="container tab-pane fade"><br>
+                    <div class="row mt-5">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card border-0">
+                                <img src="images/feature-8.jpg.webp" alt="product" class="card-img-top">
+                               <div class="card-body text-center">
+                                    <p>Apple</p>
+                                    <h5>$30.00</h5>
+                               </div>
+                               <div class="icons d-flex flex-row justify-content-center">
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card border-0">
+                                <img src="images/feature-2.jpg.webp" alt="product" class="card-img-top">
+                               <div class="card-body text-center">
+                                    <p>Banana</p>
+                                    <h5>$30.00</h5>
+                               </div>
+                               <div class="icons d-flex flex-row justify-content-center">
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0">
+                                    <img src="images/feature-7.jpg.webp" alt="product" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <p>Mango</p>
+                                    <h5>$30.00</h5>
+                                </div>
+                                <div class="icons d-flex flex-row justify-content-center">
+                                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="Fastfood" class="container tab-pane fade"><br>
+                    <div class="row mt-5">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card border-0">
+                                    <img src="images/feature-6.jpg.webp" alt="product" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <p>Burger</p>
+                                    <h5>$30.00</h5>
+                                </div>
+                                <div class="icons d-flex flex-row justify-content-center">
+                                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="container text-center" style="margin-top: 80px; margin-bottom: 120px;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/banner-1.jpg.webp" alt="Banner">
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/banner-2.jpg.webp" alt="Banner">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h3>Latest Products</h3>
+                    <div id="carouselExampleFade" class="carousel slide mt-5" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="content w-100 d-block">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-1.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-2.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-3.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="content w-100 d-block">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-3.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-1.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-2.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+
+                           <div class="carousel-item">
+                            <div class="content w-100 d-block">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-2.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-3.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-1.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3>Top Rated Products</h3>
+                    <div id="carouselExampleFade" class="carousel slide mt-5" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="content w-100 d-block">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-2.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-3.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-1.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="content w-100 d-block">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-3.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-1.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-2.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+
+                           <div class="carousel-item">
+                            <div class="content w-100 d-block">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-1.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-3.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-2.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h3>Review Products</h3>
+                    <div id="carouselExampleFade" class="carousel slide mt-5" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="content w-100 d-block">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-3.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-1.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-2.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+
+                           <div class="carousel-item">
+                            <div class="content w-100 d-block">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-2.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-1.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-3.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+
+                           <div class="carousel-item">
+                            <div class="content w-100 d-block">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-1.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-3.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content w-100 d-block mt-3">
+                                <div class="inner-content d-flex flex-row">
+                                    <img src="images/lp-2.jpg.webp" style="width: 100px; height: 100px;">
+                                    <div class="text ms-4 d-flex flex-column">Vegetables
+                                        <h5>$30.30</h5>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
